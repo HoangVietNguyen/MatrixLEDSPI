@@ -24,6 +24,7 @@
 #include "spi_driver/spi_driver.h"
 #include "generate_piece_driver/pieces.h"
 #include "lcd_i2c_driver/lcd_i2c.h"
+#include "dht11_driver/dht11.h"
 
 
 /* Private includes ----------------------------------------------------------*/

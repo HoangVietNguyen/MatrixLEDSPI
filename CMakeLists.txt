@@ -41,6 +41,8 @@ add_executable(${CMAKE_PROJECT_NAME}
         Core/Src/generate_piece_driver/pieces.h
         Core/Src/lcd_i2c_driver/lcd_i2c.c
         Core/Src/lcd_i2c_driver/lcd_i2c.h
+        Core/Src/dht11_driver/dht11.c
+        Core/Src/dht11_driver/dht11.h
         Core/Src/matrix_stack/matrix_stack.h
         Core/Src/matrix_stack/matrix_stack.c
 )

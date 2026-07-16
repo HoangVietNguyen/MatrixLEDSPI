@@ -2405,6 +2405,112 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver/lcd_i2c.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver/lcd_i2c.c.obj
  .debug_macro   0x00000000       0x34 CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver/lcd_i2c.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .text          0x00000000        0x0 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .data          0x00000000        0x0 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .bss.dht11_gpio_port
+                0x00000000        0x4 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .bss.dht11_gpio_pin
+                0x00000000        0x2 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .text.DHT11_Init
+                0x00000000       0x54 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .text.DHT11_Read
+                0x00000000      0x170 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .text.dht11_delay_us
+                0x00000000       0x4c CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .text.dht11_set_pin_output
+                0x00000000       0x44 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .text.dht11_set_pin_input
+                0x00000000       0x40 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .text.dht11_wait_for_pin
+                0x00000000       0x58 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_info    0x00000000      0x60a CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_abbrev  0x00000000      0x207 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_aranges
+                0x00000000       0x48 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_rnglists
+                0x00000000       0x32 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x1cf CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0xacc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x221 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0xbd CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0xd23 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000     0xe09e CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000     0x34a2 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x5bc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x289 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x1cb CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x114 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x1b2 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x27 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x136 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x1bc CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x3c CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x57 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x87 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x240 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x287 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x140 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x217 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000      0x8ed CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_macro   0x00000000       0x83 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_line    0x00000000      0x87d CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_str     0x00000000    0x84bd6 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .debug_frame   0x00000000       0xe8 CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
+ .ARM.attributes
+                0x00000000       0x2d CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
  .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack/matrix_stack.c.obj
  .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack/matrix_stack.c.obj
  .group         0x00000000        0xc CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack/matrix_stack.c.obj
@@ -3118,6 +3224,7 @@ LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/tetris_factory/tetris_factory.c.obj
 LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/spi_driver/spi_driver.c.obj
 LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/generate_piece_driver/pieces.c.obj
 LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver/lcd_i2c.c.obj
+LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj
 LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack/matrix_stack.c.obj
 LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/main.c.obj
 LOAD CMakeFiles/MatrixLEDSPI.dir/Core/Src/stm32f1xx_it.c.obj
