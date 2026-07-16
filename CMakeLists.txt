@@ -38,7 +38,12 @@ add_executable(${CMAKE_PROJECT_NAME}
         Core/Src/spi_driver/spi_driver.c
         Core/Src/spi_driver/spi_driver.h
         Core/Src/generate_piece_driver/pieces.c
-        Core/Src/generate_piece_driver/pieces.h)
+        Core/Src/generate_piece_driver/pieces.h
+        Core/Src/lcd_i2c_driver/lcd_i2c.c
+        Core/Src/lcd_i2c_driver/lcd_i2c.h
+        Core/Src/matrix_stack/matrix_stack.h
+        Core/Src/matrix_stack/matrix_stack.c
+)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)

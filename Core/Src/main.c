@@ -18,9 +18,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+
+#include <stdio.h>
 #include <stdlib.h>
 #include "spi_driver/spi_driver.h"
 #include "generate_piece_driver/pieces.h"
+#include "lcd_i2c_driver/lcd_i2c.h"
 
 
 /* Private includes ----------------------------------------------------------*/
@@ -44,8 +47,9 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-// SPI_HandleTypeDef hspi1;
+
 TIM_HandleTypeDef htim1;
+volatile uint16_t hight_score  = 0;
 
 /* USER CODE BEGIN PV */
 
@@ -56,6 +60,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM1_Init(void);
+void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -70,7 +75,7 @@ static void MX_TIM1_Init(void);
   * @retval int
   */
 
-extern SPI_HandleTypeDef hspi1; // Đảm bảo gọi đúng bộ SPI1 đã cấu hình
+extern SPI_HandleTypeDef hspi1; // gọi cấu hình spi trong spi_driver.c
 
 // hàm click button, khối hình dịch sang trái hoặc phảo
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN) {
@@ -127,10 +132,12 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_TIM1_Init();
+  MX_I2C1_Init();
   HAL_TIM_Base_Start_IT(&htim1);
   HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_1);
   /* USER CODE BEGIN 2 */
-
+  lcd_init();
+  char high_score_data[16];
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -141,7 +148,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    // HAL_Delay(800);
+    sprintf(high_score_data, "High score: %04d", hight_score);
+    lcd_goto_xy(0, 0);
+    lcd_send_string(high_score_data);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -185,6 +194,13 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 }
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+
 
 /**
   * @brief SPI1 Initialization Function
@@ -314,6 +330,7 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, LED_TEST_Pin|GPIO_PIN_6, GPIO_PIN_RESET);
