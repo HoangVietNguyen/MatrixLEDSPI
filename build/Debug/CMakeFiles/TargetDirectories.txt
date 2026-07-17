@@ -1,4 +1,4 @@
-/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug/CMakeFiles/MatrixLEDSPI.dir
+/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug/CMakeFiles/Embedded_system.dir
 /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug/CMakeFiles/edit_cache.dir
 /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug/CMakeFiles/rebuild_cache.dir
 /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
