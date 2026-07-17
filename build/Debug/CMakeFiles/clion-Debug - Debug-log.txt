@@ -1,11 +1,5 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug --preset Debug -S /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI -B /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug
 Build type: Debug
 -- Configuring done (0.0s)
-CMake Error at CMakeLists.txt:35 (add_executable):
-  Cannot find source file:
-
-    Core/Src/rcc_driver/rcc_driver.h
-
-
 -- Generating done (0.1s)
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Build files have been written to: /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug

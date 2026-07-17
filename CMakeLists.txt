@@ -33,35 +33,38 @@ enable_language(C ASM)
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME}
-        Core/Src/tetris_factory/tetris_factory.h
-        Core/Src/tetris_factory/tetris_factory.c
-        Core/Src/ICMax7219_driver/ICMax7219_driver.c
-        Core/Src/ICMax7219_driver/ICMax7219_driver.h
-        Core/Src/spi_driver/spi_driver.c
-        Core/Src/spi_driver/spi_driver.h
-        Core/Src/gpio_driver/gpio_driver.c
-        Core/Src/gpio_driver/gpio_driver.h
-        Core/Src/rcc_driver/rcc_driver.c
-        Core/Src/rcc_driver/rcc_driver.h
-        Core/Src/tim_driver/tim_driver.c
-        Core/Src/tim_driver/tim_driver.h
-        Core/Src/generate_piece_driver/pieces.c
-        Core/Src/generate_piece_driver/pieces.h
-        Core/Src/lcd_i2c_driver/lcd_i2c.c
-        Core/Src/lcd_i2c_driver/lcd_i2c.h
-        Core/Src/dht11_driver/dht11.c
-        Core/Src/dht11_driver/dht11.h
-        Core/Src/adc_driver/adc.c
-        Core/Src/adc_driver/adc.h
-        Core/Src/usart_driver/usart.c
-        Core/Src/usart_driver/usart.h
-        Core/Src/lora_driver_send/lora_send.c
-        Core/Src/lora_driver_send/lora_send.h
-        Core/Src/lora_driver_receive/lora_receive.c
-        Core/Src/lora_driver_receive/lora_receive.h
-        Core/Src/matrix_stack/matrix_stack.h
-        Core/Src/matrix_stack/matrix_stack.c
-        Core/Src/rcc_driver/rcc_driver.c
+        Core/Src/tetris_game/tetris_factory/tetris_factory.h
+        Core/Src/tetris_game/tetris_factory/tetris_factory.c
+        Core/Src/tetris_game/ICMax7219_driver/ICMax7219_driver.c
+        Core/Src/tetris_game/ICMax7219_driver/ICMax7219_driver.h
+        Core/Src/peripheral/spi/spi.c
+        Core/Src/peripheral/spi/spi.h
+        Core/Src/peripheral/gpio/gpio.c
+        Core/Src/peripheral/gpio/gpio.h
+        Core/Src/peripheral/rcc/rcc.c
+        Core/Src/peripheral/rcc/rcc.h
+        Core/Src/peripheral/tim/tim.c
+        Core/Src/peripheral/tim/tim.h
+        Core/Src/tetris_game/generate_piece_driver/pieces.c
+        Core/Src/tetris_game/generate_piece_driver/pieces.h
+        Core/Src/peripheral/i2c/i2c/i2c.c
+        Core/Src/peripheral/i2c/i2c/i2c.h
+        Core/Src/peripheral/i2c/lcd_config/lcd_config.c
+        Core/Src/peripheral/i2c/lcd_config/lcd_config.h
+        Core/Src/sensor_manager/dht11_driver/dht11.c
+        Core/Src/sensor_manager/dht11_driver/dht11.h
+        Core/Src/peripheral/adc/adc.c
+        Core/Src/peripheral/adc/adc.h
+        Core/Src/peripheral/usart/usart.c
+        Core/Src/peripheral/usart/usart.h
+        Core/Src/lora_transmit/lora_send/lora_send.c
+        Core/Src/lora_transmit/lora_send/lora_send.h
+        Core/Src/lora_transmit/lora_receive/lora_receive.c
+        Core/Src/lora_transmit/lora_receive/lora_receive.h
+        Core/Src/tetris_game/matrix_stack/matrix_stack.h
+        Core/Src/tetris_game/matrix_stack/matrix_stack.c
+        Core/Src/interrupt/interrupt.c
+        Core/Src/interrupt/interrupt.h
 )
 
 # Add STM32CubeMX generated sources
@@ -80,6 +83,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    Core/Src
 )
 
 # Add project symbols (macros)
