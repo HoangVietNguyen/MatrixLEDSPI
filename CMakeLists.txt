@@ -39,6 +39,12 @@ add_executable(${CMAKE_PROJECT_NAME}
         Core/Src/ICMax7219_driver/ICMax7219_driver.h
         Core/Src/spi_driver/spi_driver.c
         Core/Src/spi_driver/spi_driver.h
+        Core/Src/gpio_driver/gpio_driver.c
+        Core/Src/gpio_driver/gpio_driver.h
+        Core/Src/rcc_driver/rcc_driver.c
+        Core/Src/rcc_driver/rcc_driver.h
+        Core/Src/tim_driver/tim_driver.c
+        Core/Src/tim_driver/tim_driver.h
         Core/Src/generate_piece_driver/pieces.c
         Core/Src/generate_piece_driver/pieces.h
         Core/Src/lcd_i2c_driver/lcd_i2c.c
@@ -55,6 +61,7 @@ add_executable(${CMAKE_PROJECT_NAME}
         Core/Src/lora_driver_receive/lora_receive.h
         Core/Src/matrix_stack/matrix_stack.h
         Core/Src/matrix_stack/matrix_stack.c
+        Core/Src/rcc_driver/rcc_driver.c
 )
 
 # Add STM32CubeMX generated sources

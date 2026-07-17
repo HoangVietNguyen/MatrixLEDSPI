@@ -1,5 +1,8 @@
 #include "spi_driver.h"
 
+#include "stm32f1xx_hal_spi.h"
+#include "main.h"
+
 SPI_HandleTypeDef hspi1;
 
 void MX_SPI1_Init(void)
