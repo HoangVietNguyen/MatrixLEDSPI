@@ -6,7 +6,7 @@
 #include "stdint.h"
 #include "stdlib.h"
 #include "../tetris_factory/tetris_factory.h"
-#include "../spi_driver/spi_driver.h"
+#include "../ICMax7219_driver/ICMax7219_driver.h"
 #include "stdbool.h"
 
 
