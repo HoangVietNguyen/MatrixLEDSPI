@@ -35,10 +35,27 @@ enable_language(C ASM)
 add_executable(${CMAKE_PROJECT_NAME}
         Core/Src/tetris_factory/tetris_factory.h
         Core/Src/tetris_factory/tetris_factory.c
+        Core/Src/ICMax7219_driver/ICMax7219_driver.c
+        Core/Src/ICMax7219_driver/ICMax7219_driver.h
         Core/Src/spi_driver/spi_driver.c
         Core/Src/spi_driver/spi_driver.h
         Core/Src/generate_piece_driver/pieces.c
-        Core/Src/generate_piece_driver/pieces.h)
+        Core/Src/generate_piece_driver/pieces.h
+        Core/Src/lcd_i2c_driver/lcd_i2c.c
+        Core/Src/lcd_i2c_driver/lcd_i2c.h
+        Core/Src/dht11_driver/dht11.c
+        Core/Src/dht11_driver/dht11.h
+        Core/Src/adc_driver/adc.c
+        Core/Src/adc_driver/adc.h
+        Core/Src/usart_driver/usart.c
+        Core/Src/usart_driver/usart.h
+        Core/Src/lora_driver_send/lora_send.c
+        Core/Src/lora_driver_send/lora_send.h
+        Core/Src/lora_driver_receive/lora_receive.c
+        Core/Src/lora_driver_receive/lora_receive.h
+        Core/Src/matrix_stack/matrix_stack.h
+        Core/Src/matrix_stack/matrix_stack.c
+)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)

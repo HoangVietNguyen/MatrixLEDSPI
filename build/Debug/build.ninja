@@ -58,6 +58,15 @@ build CMakeFiles/MatrixLEDSPI.dir/Core/Src/tetris_factory/tetris_factory.c.obj: 
   OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
   OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/tetris_factory
 
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/ICMax7219_driver/ICMax7219_driver.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/ICMax7219_driver/ICMax7219_driver.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/ICMax7219_driver/ICMax7219_driver.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/ICMax7219_driver
+
 build CMakeFiles/MatrixLEDSPI.dir/Core/Src/spi_driver/spi_driver.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/spi_driver/spi_driver.c || cmake_object_order_depends_target_MatrixLEDSPI
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
@@ -75,6 +84,69 @@ build CMakeFiles/MatrixLEDSPI.dir/Core/Src/generate_piece_driver/pieces.c.obj: C
   INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
   OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/generate_piece_driver
+
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver/lcd_i2c.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/lcd_i2c_driver/lcd_i2c.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver/lcd_i2c.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver
+
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/dht11_driver/dht11.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver
+
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/adc_driver/adc.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/adc_driver/adc.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/adc_driver/adc.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/adc_driver
+
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/usart_driver/usart.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/usart_driver/usart.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/usart_driver/usart.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/usart_driver
+
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_send/lora_send.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/lora_driver_send/lora_send.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_send/lora_send.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_send
+
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_receive/lora_receive.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/lora_driver_receive/lora_receive.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_receive/lora_receive.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_receive
+
+build CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack/matrix_stack.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/matrix_stack/matrix_stack.c || cmake_object_order_depends_target_MatrixLEDSPI
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack/matrix_stack.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MatrixLEDSPI.dir
+  OBJECT_FILE_DIR = CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack
 
 build CMakeFiles/MatrixLEDSPI.dir/Core/Src/main.c.obj: C_COMPILER__MatrixLEDSPI_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Core/Src/main.c || cmake_object_order_depends_target_MatrixLEDSPI
   CONFIG = Debug
@@ -138,7 +210,7 @@ build CMakeFiles/MatrixLEDSPI.dir/startup_stm32f103xb.s.obj: ASM_COMPILER__Matri
 #############################################
 # Link the executable MatrixLEDSPI.elf
 
-build MatrixLEDSPI.elf: C_EXECUTABLE_LINKER__MatrixLEDSPI_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/tetris_factory/tetris_factory.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/spi_driver/spi_driver.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/generate_piece_driver/pieces.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/main.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/sysmem.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/syscalls.c.obj CMakeFiles/MatrixLEDSPI.dir/startup_stm32f103xb.s.obj || cmake/stm32cubemx/STM32_Drivers
+build MatrixLEDSPI.elf: C_EXECUTABLE_LINKER__MatrixLEDSPI_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/tetris_factory/tetris_factory.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/ICMax7219_driver/ICMax7219_driver.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/spi_driver/spi_driver.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/generate_piece_driver/pieces.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/lcd_i2c_driver/lcd_i2c.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/dht11_driver/dht11.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/adc_driver/adc.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/usart_driver/usart.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_send/lora_send.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/lora_driver_receive/lora_receive.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/matrix_stack/matrix_stack.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/main.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/sysmem.c.obj CMakeFiles/MatrixLEDSPI.dir/Core/Src/syscalls.c.obj CMakeFiles/MatrixLEDSPI.dir/startup_stm32f103xb.s.obj || cmake/stm32cubemx/STM32_Drivers
   CONFIG = Debug
   FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3
   LINK_FLAGS = -mcpu=cortex-m3  -T "/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/STM32F103XX_FLASH.ld" --specs=nano.specs -Wl,-Map=MatrixLEDSPI.map -Wl,--gc-sections -Wl,--print-memory-usage
@@ -154,8 +226,9 @@ build MatrixLEDSPI.elf: C_EXECUTABLE_LINKER__MatrixLEDSPI_Debug cmake/stm32cubem
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug && /opt/ST/STM32CubeCLT_1.21.0/CMake/bin/ccmake -S/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI -B/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -195,6 +268,24 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src
 
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c || cmake_object_order_depends_target_STM32_Drivers
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
+
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c || cmake_object_order_depends_target_STM32_Drivers
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
+
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
@@ -204,10 +295,10 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
-  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj.d
+  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
   INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
@@ -276,6 +367,24 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
 
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c || cmake_object_order_depends_target_STM32_Drivers
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
+
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c || cmake_object_order_depends_target_STM32_Drivers
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
+
 build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
@@ -298,6 +407,24 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
+
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c || cmake_object_order_depends_target_STM32_Drivers
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src
+
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c || cmake_object_order_depends_target_STM32_Drivers
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj.d
   FLAGS = -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
   INCLUDES = -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Core/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
@@ -326,15 +453,16 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL
 #############################################
 # Object library STM32_Drivers
 
-build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 
 
 #############################################
 # Utility command for edit_cache
 
 build cmake/stm32cubemx/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug/cmake/stm32cubemx && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug/cmake/stm32cubemx && /opt/ST/STM32CubeCLT_1.21.0/CMake/bin/ccmake -S/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI -B/Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build cmake/stm32cubemx/edit_cache: phony cmake/stm32cubemx/CMakeFiles/edit_cache.util
