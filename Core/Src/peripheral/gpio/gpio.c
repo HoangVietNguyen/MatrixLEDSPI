@@ -37,6 +37,20 @@ void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
+  /* Configure LoRa Mode Pins (PB0, PB1) as Output PP */
+  HAL_GPIO_WritePin(GPIOB, LORA_M0_Pin | LORA_M1_Pin, GPIO_PIN_RESET); // Mặc định chế độ Normal (Low)
+  GPIO_InitStruct.Pin = LORA_M0_Pin | LORA_M1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /* Configure LoRa AUX Pin (PA8) as Input Pull-Up */
+  GPIO_InitStruct.Pin = LORA_AUX_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
   /* USER CODE END MX_GPIO_Init_2 */

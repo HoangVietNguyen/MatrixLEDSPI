@@ -1,6 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "lora_transmit/lora_config/lora_config.h"
+#include "lora_transmit/lora_send/lora_send.h"
 #include "peripheral/spi/spi.h"
 #include "peripheral/gpio/gpio.h"
 #include "peripheral/rcc/rcc.h"
@@ -28,7 +31,23 @@ int main(void)
 
   HAL_DBGMCU_EnableDBGStopMode(); // Debugmodul erhalten als Processor geschlaft hat
 
+  LoRa_Send_Init();
+  LoRa_Config_Status config_status = LoRa_Configure_Module(LORA_ADDRESS, LORA_CHANNEL);
+  if (config_status == LORA_CONFIG_OK) {
+    for (int i = 0; i < 3; i++) {
+      HAL_GPIO_WritePin(LED_TEST_GPIO_Port, LED_TEST_Pin, GPIO_PIN_SET);
+      HAL_Delay(100);
+      HAL_GPIO_WritePin(LED_TEST_GPIO_Port, LED_TEST_Pin, GPIO_PIN_RESET);
+      HAL_Delay(100);
+    }
+  } else {
+    HAL_GPIO_WritePin(LED_TEST_GPIO_Port, LED_TEST_Pin, GPIO_PIN_SET);
+    HAL_Delay(2000);
+    HAL_GPIO_WritePin(LED_TEST_GPIO_Port, LED_TEST_Pin, GPIO_PIN_RESET);
+  }
+
   DHT11_Init(DHT11_PORT, DHT11_PIN);
+  HAL_Delay(1500);
 
   while (1)
   {
@@ -41,7 +60,9 @@ int main(void)
       snprintf(payload, sizeof(payload), "DHT11 Read Err");
     }
 
-    USART1_Send_String(payload);
+    // USART1_Send_String(payload);
+    LoRa_Send_String(payload);
+
     HAL_GPIO_WritePin(LED_TEST_GPIO_Port, LED_TEST_Pin, GPIO_PIN_SET);
     HAL_Delay(100);
     HAL_GPIO_WritePin(LED_TEST_GPIO_Port, LED_TEST_Pin, GPIO_PIN_RESET);

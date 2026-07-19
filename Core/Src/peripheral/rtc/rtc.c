@@ -10,13 +10,12 @@ RTC_HandleTypeDef hrtc;
 
 // ============================================================
 // MX_RTC_Init
-// Khởi tạo RTC dùng LSE (32.768 kHz).
-// Prescaler = 32767 → RTC counter tăng 1 tick/giây.
+// Khởi tạo RTC dùng LSI (RC nội ~40kHz) để tránh lỗi không có LSE.
 // ============================================================
 void MX_RTC_Init(void)
 {
     hrtc.Instance          = RTC;
-    hrtc.Init.AsynchPrediv = RTC_AUTO_1_SECOND; // Tự tính prescaler cho 1 Hz
+    hrtc.Init.AsynchPrediv = RTC_AUTO_1_SECOND; // Tự tính toán prescaler cho 1 Hz từ nguồn clock LSI
     hrtc.Init.OutPut       = RTC_OUTPUTSOURCE_NONE;
 
     if (HAL_RTC_Init(&hrtc) != HAL_OK)
@@ -31,7 +30,7 @@ void MX_RTC_Init(void)
 
 // ============================================================
 // HAL_RTC_MspInit
-// Cấu hình clock nguồn cho RTC (LSE).
+// Cấu hình clock nguồn cho RTC (LSI).
 // Được gọi tự động bên trong HAL_RTC_Init().
 // ============================================================
 void HAL_RTC_MspInit(RTC_HandleTypeDef *hrtc_param)
@@ -45,8 +44,7 @@ void HAL_RTC_MspInit(RTC_HandleTypeDef *hrtc_param)
         // Cho phép ghi vào backup domain
         HAL_PWR_EnableBkUpAccess();
 
-        // Dùng LSI (RC nội ~40kHz) thay LSE vì board có thể không có tinh thể LSE 32.768kHz
-        // LSI luôn có sẵn bên trong chip, không cần linh kiện ngoài
+        // Dùng LSI (RC nội ~40kHz) thay LSE để đảm bảo hoạt động trên mọi board Bluepill
         __HAL_RCC_LSI_ENABLE();
         while (__HAL_RCC_GET_FLAG(RCC_FLAG_LSIRDY) == RESET); // Chờ LSI ổn định (~1ms)
 
@@ -93,7 +91,6 @@ void RTC_Sleep_Seconds(uint32_t seconds)
     __HAL_RTC_ALARM_ENABLE_IT(&hrtc, RTC_IT_ALRA);
 
     // === BẮT BUỘC: Bật EXTI Line 17 để RTC Alarm đánh thức chip khỏi STOP mode ===
-    // Nếu thiếu bước này, chip sẽ ngủ mãi không dậy được.
     __HAL_RTC_ALARM_EXTI_ENABLE_IT();
     __HAL_RTC_ALARM_EXTI_ENABLE_RISING_EDGE();
     __HAL_RTC_ALARM_EXTI_CLEAR_FLAG();
@@ -118,7 +115,7 @@ void RTC_Clear_Alarm_Flag(void)
 {
     // Xóa cờ RTC Alarm
     __HAL_RTC_ALARM_CLEAR_FLAG(&hrtc, RTC_FLAG_ALRAF);
-    // Xóa cờ EXTI Line 17 (bắt buộc, nếu không ngắt bị kích hoạt liên tục)
+    // Xóa cờ EXTI Line 17
     __HAL_RTC_ALARM_EXTI_CLEAR_FLAG();
     __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
 }

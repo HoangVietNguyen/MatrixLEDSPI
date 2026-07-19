@@ -65,6 +65,13 @@ void Error_Handler(void);
 #define BUTTON_SHIFT_LEFT_GPIO_Port GPIOA
 #define BUTTON_SHIFT_LEFT_EXTI_IRQn EXTI15_10_IRQn
 
+#define LORA_M0_Pin GPIO_PIN_0
+#define LORA_M0_GPIO_Port GPIOB
+#define LORA_M1_Pin GPIO_PIN_1
+#define LORA_M1_GPIO_Port GPIOB
+#define LORA_AUX_Pin GPIO_PIN_8
+#define LORA_AUX_GPIO_Port GPIOA
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

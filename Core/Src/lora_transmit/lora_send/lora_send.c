@@ -8,7 +8,6 @@
 
 void LoRa_Send_Init(void)
 {
-    MX_USART1_UART_Init();
 }
 
 LoRa_Send_Status LoRa_Send_Data(uint8_t *data, uint16_t size)

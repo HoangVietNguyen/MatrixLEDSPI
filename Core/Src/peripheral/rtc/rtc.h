@@ -10,7 +10,7 @@
 
 extern RTC_HandleTypeDef hrtc;
 
-// Khởi tạo RTC với LSE 32.768 kHz, prescaler = 32767 → tick = 1 giây
+// Khởi tạo RTC với LSI (~40 kHz), prescaler = 39999 (nếu LSI=40kHz) -> tick = 1 giây
 void MX_RTC_Init(void);
 
 // Đưa chip vào STOP mode, RTC Alarm sẽ đánh thức sau `seconds` giây

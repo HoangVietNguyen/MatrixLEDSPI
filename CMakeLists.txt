@@ -65,9 +65,11 @@ add_executable(${CMAKE_PROJECT_NAME}
         Core/Src/tetris_game/matrix_stack/matrix_stack.c
         Core/Src/interrupt/interrupt.c
         Core/Src/interrupt/interrupt.h
-        Core/Src/main.c
-        Core/Src/main.c
+        Core/Src/lora_transmit/lora_config/lora_config.c
+        Core/Src/lora_transmit/lora_config/lora_config.h
         Core/Src/peripheral/rtc/rtc.c
+        Core/Src/peripheral/rtc/rtc.h
+        Core/Src/main.c
 )
 
 # Add STM32CubeMX generated sources

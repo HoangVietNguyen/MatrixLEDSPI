@@ -33,14 +33,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="947f3cd2-f481-41a0-9ecd-e9e3c2b822a5" name="Changes" comment="transparent">
-      <change afterPath="$PROJECT_DIR$/Core/Src/peripheral/rtc/rtc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/peripheral/rtc/rtc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_config/lora_config.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_config/lora_config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/interrupt/interrupt.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/interrupt/interrupt.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_receive/lora_receive.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_receive/lora_receive.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_receive/lora_receive.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_receive/lora_receive.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_send/lora_send.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/lora_transmit/lora_send/lora_send.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/peripheral/gpio/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/peripheral/gpio/gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/peripheral/rtc/rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/peripheral/rtc/rtc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/peripheral/rtc/rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/peripheral/rtc/rtc.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +111,7 @@
     "CMake Application.MatrixLEDSPI.executor": "Debug",
     "CMake Application.STM32_Drivers.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "OpenOCD Download & Run.Embedded_system.executor": "Debug",
+    "OpenOCD Download & Run.Embedded_system.executor": "Run",
     "OpenOCD Download & Run.MatrixLEDSPI.executor": "Debug",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
@@ -310,7 +314,7 @@
       <breakpoints>
         <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Core/Src/main.c</url>
-          <line>11</line>
+          <line>14</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">

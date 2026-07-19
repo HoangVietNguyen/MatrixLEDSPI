@@ -9,13 +9,11 @@ static volatile uint8_t lora_rx_buffer[LORA_RX_BUFFER_SIZE];
 static volatile uint16_t lora_rx_write_index = 0;
 static volatile uint16_t lora_rx_read_index = 0;
 
-static void lora_receive_push_byte(uint8_t received_data);
 static uint16_t lora_receive_next_index(uint16_t index);
 
 void LoRa_Receive_Init(void)
 {
     LoRa_Receive_Clear_Buffer();
-    MX_USART1_UART_Init();
 }
 
 uint16_t LoRa_Receive_Available(void)
@@ -55,18 +53,7 @@ void LoRa_Receive_Clear_Buffer(void)
     lora_rx_read_index = 0;
 }
 
-void USART1_RxEventCallback(uint8_t received_data)
-{
-    lora_receive_push_byte(received_data);
-    LoRa_Receive_RxEventCallback(received_data);
-}
-
-__weak void LoRa_Receive_RxEventCallback(uint8_t received_data)
-{
-    (void)received_data;
-}
-
-static void lora_receive_push_byte(uint8_t received_data)
+void LoRa_Receive_Push_Byte(uint8_t received_data)
 {
     uint16_t next_write_index = lora_receive_next_index(lora_rx_write_index);
 
