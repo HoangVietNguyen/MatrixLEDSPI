@@ -4,7 +4,7 @@
 
 #include "lora_config.h"
 #include "peripheral/usart/usart.h"
-#include "main.h"  // Để nhận dạng macro chân LORA_M0_Pin, LORA_M1_Pin, LORA_AUX_Pin
+#include "main.h"  // Chứa macro LORA_M0_Pin, LORA_M1_Pin, LORA_AUX_Pin, v.v.
 #include <string.h>
 
 #define LORA_CONFIG_TIMEOUT_MS  1000U
@@ -15,7 +15,7 @@ static void LoRa_Wait_Busy(void)
     // Đợi khi chân AUX còn ở mức LOW (LoRa đang bận)
     while (HAL_GPIO_ReadPin(LORA_AUX_GPIO_Port, LORA_AUX_Pin) == GPIO_PIN_RESET)
     {
-        HAL_Delay(1); // Chờ 1ms
+        HAL_Delay(1); 
     }
     // Chờ thêm 2ms theo khuyến cáo datasheet sau khi AUX lên High
     HAL_Delay(2);
@@ -36,6 +36,10 @@ LoRa_Config_Status LoRa_Configure_Module(uint16_t address, uint8_t channel)
     uint8_t config_cmd[6];
     uint8_t config_resp[6] = {0};
 
+    // === BƯỚC QUAN TRỌNG: Hủy ngắt nhận IT đang chạy để đưa huart về READY ===
+    // Nếu không hủy, HAL_UART_Receive() sẽ trả về HAL_BUSY và không đọc được phản hồi cấu hình.
+    HAL_UART_AbortReceive(&huart1);
+
     // 1. Chuyển LoRa sang chế độ cấu hình (M0 = 1, M1 = 1)
     LoRa_Set_Mode(GPIO_PIN_SET, GPIO_PIN_SET);
 
@@ -47,34 +51,30 @@ LoRa_Config_Status LoRa_Configure_Module(uint16_t address, uint8_t channel)
     config_cmd[4] = channel;            // CHAN: Kênh tần số (tần số = 410M + CHAN * 1M)
     config_cmd[5] = 0x44;               // OPTION: Chế độ truyền Transparent (0x44), công suất tối đa
 
-    // Tạm thời dừng ngắt nhận UART trên Receiver để tránh ngắt nhận đè lên dữ liệu cấu hình
-    HAL_NVIC_DisableIRQ(USART1_IRQn);
-
-    // 3. Gửi 6 byte cấu hình sang LoRa qua USART1
+    // 3. Gửi 6 byte cấu hình sang LoRa qua USART1 (dạng blocking)
     if (USART1_Send_Data(config_cmd, sizeof(config_cmd), LORA_CONFIG_TIMEOUT_MS) != HAL_OK)
     {
-        HAL_NVIC_EnableIRQ(USART1_IRQn);
-        // Đưa về chế độ Normal nếu cấu hình lỗi
+        // Trả LoRa về chế độ Normal và kích hoạt lại ngắt nhận UART
         LoRa_Set_Mode(GPIO_PIN_RESET, GPIO_PIN_RESET);
+        USART1_Start_Receive_IT();
         return LORA_CONFIG_ERROR_TIMEOUT;
     }
 
-    // 4. Chờ LoRa phản hồi lại 6 byte cấu hình (đọc dạng blocking)
+    // 4. Chờ LoRa phản hồi lại 6 byte cấu hình (dạng blocking)
     if (USART1_Receive_Data(config_resp, sizeof(config_resp), LORA_CONFIG_TIMEOUT_MS) != HAL_OK)
     {
-        HAL_NVIC_EnableIRQ(USART1_IRQn);
         LoRa_Set_Mode(GPIO_PIN_RESET, GPIO_PIN_RESET);
+        USART1_Start_Receive_IT();
         return LORA_CONFIG_ERROR_TIMEOUT;
     }
-
-    // Kích hoạt lại ngắt nhận UART cho hoạt động truyền nhận dữ liệu sau đó
-    HAL_NVIC_EnableIRQ(USART1_IRQn);
-    USART1_Start_Receive_IT();
 
     // 5. Cấu hình thành công, đưa LoRa về chế độ chạy bình thường (M0 = 0, M1 = 0)
     LoRa_Set_Mode(GPIO_PIN_RESET, GPIO_PIN_RESET);
 
-    // 6. Kiểm tra phản hồi có khớp với lệnh gửi đi không
+    // 6. Kích hoạt lại chế độ nhận ngắt IT chuẩn bị nhận dữ liệu không dây
+    USART1_Start_Receive_IT();
+
+    // 7. Kiểm tra phản hồi có khớp với lệnh gửi đi không
     if (memcmp(config_cmd, config_resp, sizeof(config_cmd)) != 0)
     {
         return LORA_CONFIG_ERROR_RESPONSE;
