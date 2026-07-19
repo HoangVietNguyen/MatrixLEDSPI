@@ -2,15 +2,7 @@
 #include "tetris_game/generate_piece_driver/pieces.h"
 
 // hàm click button, khối hình dịch sang trái hoặc phảo
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN) {
-  if (GPIO_PIN == BUTTON_SHIFT_LEFT_Pin) {
-    MAX7219_Shift_Left_Pieces();
-  }
-
-  if (GPIO_PIN == BUTTON_SHIFT_RIGHT_Pin) {
-    MAX7219_Shift_Right_Pieces();
-  }
-}
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN) {}
 
 //hàm interrupt bắt sự kiện đếm hết 500ms, tạo ra một hình khối
 void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
