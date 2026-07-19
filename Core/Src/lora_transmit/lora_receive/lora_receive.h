@@ -28,6 +28,6 @@ void LoRa_Receive_Init(void);
 uint16_t LoRa_Receive_Available(void);
 LoRa_Receive_Status LoRa_Receive_Read(uint8_t *buffer, uint16_t buffer_size, uint16_t *received_size);
 void LoRa_Receive_Clear_Buffer(void);
-void LoRa_Receive_RxEventCallback(uint8_t received_data);
+void LoRa_Receive_Push_Byte(uint8_t received_data);
 
 #endif //MATRIXLEDSPI_LORA_RECEIVE_H
