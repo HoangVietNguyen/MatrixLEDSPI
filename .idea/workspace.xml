@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Embedded_system" targetName="Embedded_system" />
+      <config projectName="Embedded_system" targetName="STM32_Drivers" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="false" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug - Debug" ENABLED="true" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build/Debug" />
+      <configuration PROFILE_NAME="Release" ENABLED="false" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build/Release" />
+      <configuration PROFILE_NAME="Release - Release" ENABLED="false" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build/Release" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="947f3cd2-f481-41a0-9ecd-e9e3c2b822a5" name="Changes" comment="transparent">
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CMakeASMCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/interrupt/interrupt.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/interrupt/interrupt.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/lora_transmit/lora_receive/lora_receive.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/lora_transmit/lora_receive/lora_receive.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/lora_transmit/lora_send/lora_send.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/lora_transmit/lora_send/lora_send.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/adc/adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/adc/adc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/gpio/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/gpio/gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/i2c/i2c/i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/i2c/i2c/i2c.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/i2c/lcd_config/lcd_config.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/i2c/lcd_config/lcd_config.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/rcc/rcc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/rcc/rcc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/spi/spi.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/spi/spi.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/tim/tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/tim/tim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/usart/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/peripheral/usart/usart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/sensor_manager/dht11_driver/dht11.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/sensor_manager/dht11_driver/dht11.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/stm32f1xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/stm32f1xx_hal_msp.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/syscalls.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/syscalls.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/sysmem.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/sysmem.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/ICMax7219_driver/ICMax7219_driver.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/ICMax7219_driver/ICMax7219_driver.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/generate_piece_driver/pieces.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/generate_piece_driver/pieces.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/matrix_stack/matrix_stack.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/matrix_stack/matrix_stack.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/tetris_factory/tetris_factory.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/Core/Src/tetris_game/tetris_factory/tetris_factory.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/startup_stm32f103xb.s.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/Embedded_system.dir/startup_stm32f103xb.s.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/Embedded_system.elf" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/Embedded_system.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/Embedded_system.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/Embedded_system.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake/stm32cubemx/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/Debug/compile_commands.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="983" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug - Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/LoRa_sendData_USART" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HoangVietNguyen/Embedded_system.git&quot;,
+    &quot;accountId&quot;: &quot;eb00e5a1-ff2b-43d8-9f6f-e099b81b1646&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Core/Src/lora_transmit/lora_receive/lora_receive.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Src/peripheral/i2c/lcd_config/lcd_config.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="9olTqcR2" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2025" />
+    <option name="minorVersion" value="3.2" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3FafwILrAoLJFRdMmjZ0lvsml56" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CMake Application.Embedded_system.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.MatrixLEDSPI.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.STM32_Drivers.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;OpenOCD Download &amp; Run.Embedded_system.executor&quot;: &quot;Debug&quot;,
+    &quot;OpenOCD Download &amp; Run.MatrixLEDSPI.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/LoRa__sendData__USART&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nguyenhoangviet/Desktop/STM32Project/Embedded_system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CLionExternalConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Core/Src/tetris_factory" />
+      <recent name="$PROJECT_DIR$/Core/Src/generate_piece_driver" />
+      <recent name="$PROJECT_DIR$/Core/Src" />
+      <recent name="$PROJECT_DIR$/Core/Src/spi_driver" />
+    </key>
+  </component>
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.Embedded_system">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="STM32_Drivers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Embedded_system" TARGET_NAME="Embedded_system" CONFIG_NAME="Debug - Debug" RUN_TARGET_PROJECT_NAME="Embedded_system" RUN_TARGET_NAME="Embedded_system">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Embedded_system" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Embedded_system" TARGET_NAME="Embedded_system" CONFIG_NAME="Debug - Debug" version="1" RUN_PATH="$PROJECT_DIR$/build/Debug/Embedded_system.elf">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="$PROJECT_DIR$/../../local_openocd.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
+        <debugger kind="GDB" isBundled="true" />
+      </openocd>
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.STM32_Drivers" />
+      <item itemvalue="OpenOCD Download &amp; Run.Embedded_system" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="947f3cd2-f481-41a0-9ecd-e9e3c2b822a5" name="Changes" comment="" />
+      <created>1782318339165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782318339165</updated>
+      <workItem from="1782318340277" duration="1880000" />
+      <workItem from="1782546346864" duration="7444000" />
+      <workItem from="1782554754671" duration="8948000" />
+      <workItem from="1782825757716" duration="22000" />
+      <workItem from="1783135805473" duration="17321000" />
+      <workItem from="1783305242581" duration="9921000" />
+      <workItem from="1783602581260" duration="1371000" />
+      <workItem from="1784203718823" duration="5335000" />
+      <workItem from="1784252099367" duration="273000" />
+      <workItem from="1784252375803" duration="3384000" />
+      <workItem from="1784256504038" duration="1171000" />
+      <workItem from="1784257745990" duration="523000" />
+      <workItem from="1784258301474" duration="469000" />
+      <workItem from="1784258783955" duration="143000" />
+      <workItem from="1784258947796" duration="11137000" />
+      <workItem from="1784279151894" duration="162000" />
+      <workItem from="1784279329191" duration="406000" />
+      <workItem from="1784279764311" duration="1000" />
+      <workItem from="1784279846377" duration="843000" />
+      <workItem from="1784290298421" duration="1867000" />
+      <workItem from="1784354907765" duration="601000" />
+      <workItem from="1784364398038" duration="19252000" />
+      <workItem from="1784450933372" duration="804000" />
+    </task>
+    <task id="LOCAL-00001" summary="navigator code">
+      <option name="closed" value="true" />
+      <created>1784205050877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784205050877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add sensor driver">
+      <option name="closed" value="true" />
+      <created>1784205638098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784205638098</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add sensor driver">
+      <option name="closed" value="true" />
+      <created>1784205668015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1784205668015</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add peripheral">
+      <option name="closed" value="true" />
+      <created>1784256718709</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784256718709</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add peripheral">
+      <option name="closed" value="true" />
+      <created>1784272764596</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784272764596</updated>
+    </task>
+    <task id="LOCAL-00006" summary="manager code">
+      <option name="closed" value="true" />
+      <created>1784277477288</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1784277477288</updated>
+    </task>
+    <task id="LOCAL-00007" summary="change name">
+      <option name="closed" value="true" />
+      <created>1784277711814</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1784277711814</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".ioc config">
+      <option name="closed" value="true" />
+      <created>1784278537455</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1784278537455</updated>
+    </task>
+    <task id="LOCAL-00009" summary="send data usart">
+      <option name="closed" value="true" />
+      <created>1784370007304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1784370007304</updated>
+    </task>
+    <task id="LOCAL-00010" summary="send data usart">
+      <option name="closed" value="true" />
+      <created>1784377745536</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1784377745536</updated>
+    </task>
+    <task id="LOCAL-00011" summary="transparent">
+      <option name="closed" value="true" />
+      <created>1784383547910</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1784383547910</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="navigator code" />
+    <MESSAGE value="add sensor driver" />
+    <MESSAGE value="add peripheral" />
+    <MESSAGE value="manager code" />
+    <MESSAGE value="change name" />
+    <MESSAGE value=".ioc config" />
+    <MESSAGE value="send data usart" />
+    <MESSAGE value="transparent" />
+    <option name="LAST_COMMIT_MESSAGE" value="transparent" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/main.c</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/generate_piece_driver/pieces.c</url>
+          <line>19</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/generate_piece_driver/pieces.c</url>
+          <line>23</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/generate_piece_driver/pieces.c</url>
+          <line>27</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/generate_piece_driver/pieces.c</url>
+          <line>30</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/generate_piece_driver/pieces.c</url>
+          <line>31</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/generate_piece_driver/pieces.c</url>
+          <line>32</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/generate_piece_driver/pieces.c</url>
+          <line>33</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/spi_driver/spi_driver.c</url>
+          <line>28</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/main.c</url>
+          <line>26</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="CMakeExceptionBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
