@@ -1,8 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "lora_transmit/lora_receive/lora_receive.h"
+#include "lora_transmit/lora_config/lora_config.h" // Import thư viện cấu hình LoRa
 #include "peripheral/spi/spi.h"
 #include "peripheral/gpio/gpio.h"
 #include "peripheral/rcc/rcc.h"
@@ -11,83 +13,97 @@
 #include "peripheral/i2c/lcd_config/lcd_config.h"
 #include "peripheral/usart/usart.h"
 
+// Buffer tạm thời để đọc chuỗi ra xử lý hiển thị LCD
 #define RX_BUFFER_SIZE 64
-char rx_string_buffer[RX_BUFFER_SIZE];
-uint8_t rx_index = 0;
-
-RTC_HandleTypeDef hrtc;
+uint8_t rx_string_buffer[RX_BUFFER_SIZE];
 
 int main(void)
 {
   HAL_Init();
-
   SystemClock_Config();
 
+  // Khởi tạo phần cứng cơ bản
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_I2C1_Init();
   MX_TIM1_Init();
+  
+  // Khởi tạo USART1 (Cấu hình cứng và bật ngắt nhận 1-byte)
   MX_USART1_UART_Init();
-  LoRa_Receive_Clear_Buffer();
 
-  // Kiểm tra khởi tạo cấu hình các ngoại vi cần thiết
+  // Khởi tạo bộ đệm phần mềm cho LoRa
+  LoRa_Receive_Init();
+
+  // Khởi động màn hình LCD
   lcd_init();
   lcd_goto_xy(0, 0);
+  lcd_send_string("System Init...  ");
+  HAL_Delay(500);
+
+  // Thực hiện cấu hình module LoRa E32 sang chế độ Transparent, cùng Address & Channel
+  // (Đoạn này tự động kéo chân M0/M1 lên 1 để nạp cấu hình và kéo về 0 sau khi xong)
+  LoRa_Config_Status config_status = LoRa_Configure_Module(LORA_ADDRESS, LORA_CHANNEL);
+
+  lcd_goto_xy(0, 0);
+  if (config_status == LORA_CONFIG_OK) {
+    lcd_send_string("Config: OK      ");
+  } else {
+    lcd_send_string("Config: FAIL    ");
+  }
   
-  // Kiểm tra đơn giản: nếu MX_USART1_UART_Init chạy qua được mà không crash
-  // thì coi như cấu hình phần cứng thành công.
-  lcd_send_string("Config: OK      ");
   lcd_goto_xy(1, 0);
   lcd_send_string("Waiting data... ");
 
   while (1)
   {
-    // Fix lỗi so sánh ở đây: sử dụng == thay vì =
-    if (usart1_rx_flag == 1) {
-      uint8_t received_byte = USART1_Get_Received_Byte();
+    // Kiểm tra bộ đệm nhận LoRa có byte nào không
+    uint16_t available = LoRa_Receive_Available();
+    if (available > 0)
+    {
+      // Chờ 50ms để dữ liệu UART truyền hết trọn vẹn toàn bộ chuỗi ký tự
+      HAL_Delay(50);
 
-      // Kiểm tra ký tự kết thúc chuỗi
-      if (received_byte == '\n'
-        || received_byte == '\r'
-        || received_byte == '\0'
-        || rx_index >= (RX_BUFFER_SIZE - 1)) {
-        if (rx_index > 0) {
-          rx_string_buffer[rx_index] = '\0';
+      uint16_t rx_len = 0;
+      memset(rx_string_buffer, 0, sizeof(rx_string_buffer));
 
-          int temp = 0, hum = 0;
-          // Parse chuỗi dạng: "Term: XX C, Hum: YY%"
-          if (sscanf(rx_string_buffer, "Term: %d C, Hum: %d%%", &temp, &hum) == 2) {
-            char lcd_row0[17];
-            char lcd_row1[17];
-            snprintf(lcd_row0, sizeof(lcd_row0), "Temp: %d C      ", temp);
-            snprintf(lcd_row1, sizeof(lcd_row1), "Hum:  %d %%      ", hum);
-            
-            lcd_goto_xy(0, 0);
-            lcd_send_string(lcd_row0);
-            lcd_goto_xy(1, 0);
-            lcd_send_string(lcd_row1);
-          } else {
-            // Nếu nhận được chuỗi lỗi hoặc khác dạng (ví dụ "DHT11 Read Err")
-            char lcd_row0[17];
-            snprintf(lcd_row0, sizeof(lcd_row0), "%-16s", rx_string_buffer);
-            lcd_goto_xy(0, 0);
-            lcd_send_string(lcd_row0);
-            
-            // lcd_goto_xy(1, 0);
-            // lcd_send_string("Waiting data... ");
-          }
-          rx_index = 0;
+      // Đọc toàn bộ gói tin từ Ring Buffer mềm
+      if (LoRa_Receive_Read(rx_string_buffer, sizeof(rx_string_buffer) - 1, &rx_len) == LORA_RECEIVE_OK && rx_len > 0)
+      {
+        rx_string_buffer[rx_len] = '\0'; // Kết thúc chuỗi C-String
+
+        int temp = 0, hum = 0;
+        // Phân tích chuỗi định dạng nhiệt độ độ ẩm: "Term: XX C, Hum: YY%"
+        if (sscanf((char *)rx_string_buffer, "Term: %d C, Hum: %d%%", &temp, &hum) == 2) {
+          char lcd_row0[17];
+          char lcd_row1[17];
+          snprintf(lcd_row0, sizeof(lcd_row0), "Temp: %d C      ", temp);
+          snprintf(lcd_row1, sizeof(lcd_row1), "Hum:  %d %%      ", hum);
+          
+          lcd_goto_xy(0, 0);
+          lcd_send_string(lcd_row0);
+          lcd_goto_xy(1, 0);
+          lcd_send_string(lcd_row1);
+        } 
+        else 
+        {
+          // Nếu nhận chuỗi khác (như "DHT11 Read Err" hay "System Woke Up")
+          char lcd_row0[17];
+          snprintf(lcd_row0, sizeof(lcd_row0), "%-16s", (char *)rx_string_buffer);
+          lcd_goto_xy(0, 0);
+          lcd_send_string(lcd_row0);
+          
+          lcd_goto_xy(1, 0);
+          lcd_send_string("Waiting data... ");
         }
-      } else {
-        rx_string_buffer[rx_index++] = (char)received_byte;
       }
     }
+    HAL_Delay(10); // Giảm tải CPU
   }
 }
 
+// Bắt sự kiện ngắt nhận UART và đẩy thẳng byte vào buffer LoRa
 void USART1_RxEventCallback(uint8_t received_data)
 {
-  // Đẩy byte nhận được từ ngắt vào bộ đệm của LoRa
   LoRa_Receive_Push_Byte(received_data);
 }
 

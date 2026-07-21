@@ -1,4 +1,4 @@
-# Install script for directory: /Users/nguyenhoangviet/Desktop/STM32Project/MatrixLEDSPI/cmake/stm32cubemx
+# Install script for directory: /Users/nguyenhoangviet/Desktop/STM32Project/Embedded_system/cmake/stm32cubemx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

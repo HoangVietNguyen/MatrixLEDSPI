@@ -4,9 +4,39 @@
 
 #include "lora_config.h"
 #include "peripheral/usart/usart.h"
+#include "main.h"  // Chứa macro LORA_M0_Pin, LORA_M1_Pin, LORA_AUX_Pin, v.v.
 #include <string.h>
 
 #define LORA_CONFIG_TIMEOUT_MS  1000U
+
+// Hàm đợi mô-đun LoRa xử lý xong (AUX = 1 là rảnh)
+static uint8_t LoRa_Wait_Busy(void)
+{
+    uint32_t timeout_tick = HAL_GetTick();
+
+    // Đợi khi chân AUX còn ở mức LOW (LoRa đang bận)
+    while (HAL_GPIO_ReadPin(LORA_AUX_GPIO_Port, LORA_AUX_Pin) == GPIO_PIN_RESET)
+    {
+        // Nếu quá 1000ms (1 giây) mà AUX không lên High -> báo lỗi và thoát
+        if ((HAL_GetTick() - timeout_tick) > 1000U)
+        {
+            return 0; // Thất bại (Timeout)
+        }
+        HAL_Delay(1);
+    }
+    HAL_Delay(2);
+    return 1; // Thành công
+}
+
+// Hàm đổi chế độ hoạt động của LoRa bằng cách kéo chân M0, M1
+static void LoRa_Set_Mode(GPIO_PinState m0_state, GPIO_PinState m1_state)
+{
+    HAL_GPIO_WritePin(LORA_M0_GPIO_Port, LORA_M0_Pin, m0_state);
+    HAL_GPIO_WritePin(LORA_M1_GPIO_Port, LORA_M1_Pin, m1_state);
+    
+    // Đợi module chuyển đổi trạng thái xong
+    LoRa_Wait_Busy();
+}
 
 LoRa_Config_Status LoRa_Configure_Module(uint16_t address, uint8_t channel)
 {
